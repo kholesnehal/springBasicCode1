@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+      xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        https://www.springframework.org/schema/context
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+ <bean class="com.springcore.autowired.Author" name="author">
+ <property name="authorName" value="snehal"/>
+ <property name="address" value="Pune"/>
+ <property name="contact" value="6789043678" />
+  </bean>
+  
+<!--  <bean class="com.springcore.autowired.Book" name="book" autowire="byName"> -->
+ 
+ <!-- <bean class="com.springcore.autowired.Book" name="book" autowire="byType">-->
+ 
+ <bean class="com.springcore.autowired.Book" name="book" autowire="constructor">
+ 
+  <property name="ISBN" value="87675465"/>
+ <property name="bookName" value="java"/>
+ 
+ </bean>
+ 
+ 
+ 
+
+ 
+ 
+ </beans>
