@@ -1,0 +1,8 @@
+2021-11-23 11:24:01,442 INFO c.s.c.Test [main] welcome
+2021-11-23 11:24:01,473 DEBUG o.s.c.s.ClassPathXmlApplicationContext [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cc43f62
+2021-11-23 11:35:52,405 INFO c.s.c.Test [main] welcome
+2021-11-23 11:35:52,433 DEBUG o.s.c.s.ClassPathXmlApplicationContext [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cb0755b
+2021-11-23 11:38:32,236 INFO c.s.c.Test [main] welcome
+2021-11-23 11:38:32,262 DEBUG o.s.c.s.ClassPathXmlApplicationContext [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cb0755b
+2021-11-23 11:43:38,617 INFO c.s.c.Test [main] welcome
+2021-11-23 11:43:38,646 DEBUG o.s.c.s.ClassPathXmlApplicationContext [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cb0755b

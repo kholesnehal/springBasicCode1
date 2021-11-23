@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="1">
+    <Appenders>
+        <Console name="Console" >
+                <PatternLayout pattern="--log4j2--- %d{HH:mm:ss:SSS} {%t} %-5level %logger{36} - %msg%n"/>
+</Console>
+        <RollingFile name="ErrorLog" fileName="error.log"
+                     filePattern="%d{yyyyMMdd}.error.%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="1 KB"/>
+            </Policies>
+                <Filter>
+                    <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+                </Filter>
+
+
+        </RollingFile>
+
+        <RollingFile name="InfoLog" fileName="info.log"
+                     filePattern="%d{yyyyMMdd}.info.%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <filter>
+                    <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+                </filter>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="1 KB"/>
+            </Policies>
+        </RollingFile>
+
+    </Appenders>>
+
+
+    <Loggers>
+        <Logger name="com.marcobehler.logging.detailed.SomeOtherClass" level="debug"/>
+            <Root level="debug">
+                <Appenderref ref="Console"/>
+                <Appenderref ref="ErrorLog"/>
+                <Appenderref ref="InfoLog"/>
+            </Root>
+
+    </Loggers>
+</Configuration>
