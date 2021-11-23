@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Demo {
-	private static final Logger logger = LogManager.getLogger(Test.class);
+	private static final Logger logger = LogManager.getLogger(Demo.class);
 	public static void main(String[] args) {
 		ApplicationContext context=new ClassPathXmlApplicationContext("autoconfig.xml");
 		Book book=context.getBean("book",Book.class);

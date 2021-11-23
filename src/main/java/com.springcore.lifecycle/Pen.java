@@ -7,7 +7,7 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
 public class Pen implements InitializingBean,DisposableBean {
-	private static final Logger logger = LogManager.getLogger(Test.class);
+	private static final Logger logger = LogManager.getLogger(Pen.class);
 	private String name;
 	private int price;
 	public String getName() {
