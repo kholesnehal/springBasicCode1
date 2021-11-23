@@ -7,20 +7,21 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd
         https://www.springframework.org/schema/context
        https://www.springframework.org/schema/beans/spring-beans.xsd">
-       
-       <contex:annotation-config></contex:annotation-config>
- <!-- <bean class="com.springcore.lifecycle.Car" name="c1" 
- init-method="init" destroy-method="destroy">
- <property name="name" value="fortuner"/>
- <property name="price" value="700000"/>
- 
- </bean>
- <bean class="com.springcore.lifecycle.Pen" name="p1">
- <property name="name" value="cello" />
- <property name="price" value="10"/>
- 
- </bean>
-  -->
+
+    <context:annotation-config></context:annotation-config>
+
+    <!-- <bean class="com.springcore.lifecycle.Car" name="c1"
+    init-method="init" destroy-method="destroy">
+    <property name="name" value="fortuner"/>
+    <property name="price" value="700000"/>
+
+    </bean>
+    <bean class="com.springcore.lifecycle.Pen" name="p1">
+    <property name="name" value="cello" />
+    <property name="price" value="10"/>
+
+    </bean>
+     -->
  <bean class="com.springcore.lifecycle.College" name="clg">
  <property name="collegeName" value="DY Patil College"></property>
  
