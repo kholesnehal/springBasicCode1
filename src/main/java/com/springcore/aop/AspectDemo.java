@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 
 @Aspect
 public class AspectDemo {
-    private static final Logger logger = LogManager.getLogger(Test.class);
+    private static final Logger logger = LogManager.getLogger(AspectDemo.class);
 
     @Before("execution(* com.springcore.aop.ShopService.service()")
     public void printBefore()

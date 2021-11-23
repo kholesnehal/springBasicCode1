@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 public class Test1 {
-	private static final Logger logger = LogManager.getLogger(Test.class);
+	private static final Logger logger = LogManager.getLogger(Test1.class);
 
 	public static void main(String[] args) {
 

@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.springcore.collections.Emp;
 
 public class Test2 {
-    private static final Logger logger = LogManager.getLogger(Test.class);
+    private static final Logger logger = LogManager.getLogger(Test2.class);
 
 	public static void main(String[] args) {
 

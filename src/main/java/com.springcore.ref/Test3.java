@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test3 {
-	private static final Logger logger = LogManager.getLogger(Test.class);
+	private static final Logger logger = LogManager.getLogger(Test3.class);
 	public static void main(String[] args) {
 		ApplicationContext ctx=new ClassPathXmlApplicationContext("refconfig.xml");
 		A a=(A) ctx.getBean("aref");

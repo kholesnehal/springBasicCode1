@@ -5,7 +5,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 public class Car {
-	private static final Logger logger = LogManager.getLogger(Test.class);
+	private static final Logger logger = LogManager.getLogger(Car.class);
 	
 	private String name;
 	private double price;
