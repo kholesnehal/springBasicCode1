@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args)
     {
-        System.out.println( "Hello World!" );
+        
         logger.info("hey");
        ApplicationContext ctx=new ClassPathXmlApplicationContext("config.xml");
        Student stud=(Student) ctx.getBean("student1");
