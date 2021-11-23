@@ -1,6 +1,11 @@
 package com.springcore.lifecycle;
 
+import com.springcore.collections.Test;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 public class Car {
+	private static final Logger logger = LogManager.getLogger(Test.class);
 	
 	private String name;
 	private double price;
@@ -32,11 +37,11 @@ public class Car {
 	
 	public void init()
 	{
-		System.out.println("inside init method");
+		logger.info("inside init method");
 	}
 	public void destroy()
 	{
-		System.out.println("inside destroy method");
+		logger.info("inside destroy method");
 	}
 
 }

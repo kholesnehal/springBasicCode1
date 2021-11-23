@@ -16,7 +16,7 @@ public class Emp {
 	}
 
 	public Emp(String name, List<String> phones, Set<String> addresses, Map<String, String> courses) {
-		super();
+
 		this.name = name;
 		this.phones = phones;
 		this.addresses = addresses;

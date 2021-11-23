@@ -1,8 +1,11 @@
-2021-11-23 11:24:01,442 INFO c.s.c.Test [main] welcome
-2021-11-23 11:24:01,473 DEBUG o.s.c.s.ClassPathXmlApplicationContext [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cc43f62
-2021-11-23 11:35:52,405 INFO c.s.c.Test [main] welcome
-2021-11-23 11:35:52,433 DEBUG o.s.c.s.ClassPathXmlApplicationContext [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cb0755b
-2021-11-23 11:38:32,236 INFO c.s.c.Test [main] welcome
-2021-11-23 11:38:32,262 DEBUG o.s.c.s.ClassPathXmlApplicationContext [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cb0755b
-2021-11-23 11:43:38,617 INFO c.s.c.Test [main] welcome
-2021-11-23 11:43:38,646 DEBUG o.s.c.s.ClassPathXmlApplicationContext [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cb0755b
+2021-11-23 14:48:22,104 DEBUG o.s.b.f.x.XmlBeanDefinitionReader [main] Loaded 1 bean definitions from class path resource [collectionconfig.xml]
+2021-11-23 14:48:22,135 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'emp1'
+2021-11-23 14:48:22,203 INFO c.s.c.Test [main] snehal
+2021-11-23 14:48:22,204 INFO c.s.c.Test [main] [Pune, Satara, Nagar, Shirur]
+2021-11-23 14:48:22,204 INFO c.s.c.Test [main] [65679879870, 65768798090, 986779879870, 66547559870, null]
+2021-11-23 14:48:22,204 INFO c.s.c.Test [main] {java=2month, python=1 month, c=1.5month}
+2021-11-23 14:48:22,205 INFO c.s.c.Test [main] hello
+2021-11-23 14:48:22,205 ERROR c.s.c.Test [main] hi
+2021-11-23 16:27:31,847 DEBUG o.s.c.s.ClassPathXmlApplicationContext [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e1a0406
+2021-11-23 16:27:31,955 DEBUG o.s.b.f.x.XmlBeanDefinitionReader [main] Loaded 1 bean definitions from class path resource [aopconfig.xml]
+2021-11-23 16:27:31,973 DEBUG o.s.b.f.s.DefaultListableBeanFactory [main] Creating shared instance of singleton bean 'shop'

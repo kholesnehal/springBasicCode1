@@ -1,6 +1,9 @@
 package com.springcore.lifecycle;
 
-import org.apache.commons.logging.LogFactory;
+import com.springcore.collections.Test;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.apache.log4j.spi.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
@@ -8,22 +11,21 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.springcore.collections.Emp;
 
-import java.util.logging.Logger;
-
-public class Test {
+public class Test2 {
+    private static final Logger logger = LogManager.getLogger(Test.class);
 
 	public static void main(String[] args) {
 
 		AbstractApplicationContext ctx=new ClassPathXmlApplicationContext("lifecycleconfig.xml");
 //        Car car=(Car) ctx.getBean("c1");
-//        System.out.println(car);
+//        logger.info(car);
         ctx.registerShutdownHook();
 //        
 //        Pen pen=(Pen) ctx.getBean("p1");
-//        System.out.println(pen);
+//        logger.info(pen);
         
         College college=(College) ctx.getBean("clg");
-        System.out.println(college);
+        logger.info(college);
         
 	}
 

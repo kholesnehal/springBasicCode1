@@ -1,7 +1,11 @@
 package com.springcore.lifecycle;
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
+
+import com.springcore.collections.Test;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 public class College {
+	private static final Logger logger = LogManager.getLogger(Test.class);
 	private String collegeName;
 
 	public String getCollegeName() {
@@ -22,15 +26,15 @@ public class College {
 		return "College [collegeName=" + collegeName + "]";
 	}
 	
-	@PostConstruct 
+//	@PostConstruct
 		public void start()
 	{
-		System.out.println("starting method");
+		logger.info("starting method");
 	}
-	@PreDestroy
+//	@PreDestroy
 	public void end()
 	{
-		System.out.println("ending method");
+		logger.info("ending method");
 	}
 
 }

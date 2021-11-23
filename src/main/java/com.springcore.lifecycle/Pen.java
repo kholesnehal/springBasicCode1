@@ -1,10 +1,13 @@
 package com.springcore.lifecycle;
 
+import com.springcore.collections.Test;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
 public class Pen implements InitializingBean,DisposableBean {
-	
+	private static final Logger logger = LogManager.getLogger(Test.class);
 	private String name;
 	private int price;
 	public String getName() {
@@ -34,11 +37,11 @@ public class Pen implements InitializingBean,DisposableBean {
 	}
 	public void destroy() throws Exception {
 		
-		System.out.println("destroy pen");
+		logger.info("destroy pen");
 		
 	}
 	public void afterPropertiesSet() throws Exception {
-	System.out.println("pen after property set");	
+	logger.info("pen after property set");
 	}
 	
 	

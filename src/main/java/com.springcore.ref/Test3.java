@@ -1,16 +1,19 @@
 package com.springcore.ref;
 
+import com.springcore.collections.Test;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Test {
-
+public class Test3 {
+	private static final Logger logger = LogManager.getLogger(Test.class);
 	public static void main(String[] args) {
 		ApplicationContext ctx=new ClassPathXmlApplicationContext("refconfig.xml");
 		A a=(A) ctx.getBean("aref");
-		System.out.println(a.getX());
-		System.out.println(a.getObj().getY());
-		System.out.println(a);
+		logger.info(a.getX());
+		logger.info(a.getObj().getY());
+		logger.info(a);
 	}
 
 }
